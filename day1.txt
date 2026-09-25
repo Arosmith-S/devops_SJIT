@@ -1,0 +1,158 @@
+arosm@Arosmith MINGW64 ~ (master)
+$ cd sjc-devops/
+
+arosm@Arosmith MINGW64 ~/sjc-devops (master)
+$ git init
+Initialized empty Git repository in C:/Users/arosm/sjc-devops/.git/
+
+arosm@Arosmith MINGW64 ~/sjc-devops (master)
+$ vim test.txt
+
+arosm@Arosmith MINGW64 ~/sjc-devops (master)
+$ cat test.txt
+hello shakir
+
+arosm@Arosmith MINGW64 ~/sjc-devops (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        test.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+arosm@Arosmith MINGW64 ~/sjc-devops (master)
+$ git add test.txt
+warning: in the working copy of 'test.txt', LF will be replaced by CRLF the next time Git touches it
+
+arosm@Arosmith MINGW64 ~/sjc-devops (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   test.txt
+
+
+arosm@Arosmith MINGW64 ~/sjc-devops (master)
+$ git rm --cached test.txt
+rm 'test.txt'
+
+arosm@Arosmith MINGW64 ~/sjc-devops (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        test.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+arosm@Arosmith MINGW64 ~/sjc-devops (master)
+$ git add .
+warning: in the working copy of 'test.txt', LF will be replaced by CRLF the next time Git touches it
+
+arosm@Arosmith MINGW64 ~/sjc-devops (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   test.txt
+
+
+arosm@Arosmith MINGW64 ~/sjc-devops (master)
+$ pwd
+/c/Users/arosm/sjc-devops
+
+arosm@Arosmith MINGW64 ~/sjc-devops (master)
+$ git config --global user.name "Arosmith"
+
+arosm@Arosmith MINGW64 ~/sjc-devops (master)
+$ git config --global user.email "arosmith03@gmail.com"
+
+arosm@Arosmith MINGW64 ~/sjc-devops (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   test.txt
+
+
+arosm@Arosmith MINGW64 ~/sjc-devops (master)
+$ git commit -m "hello this is aro"
+[master (root-commit) 514e21b] hello this is aro
+ 1 file changed, 1 insertion(+)
+ create mode 100644 test.txt
+
+arosm@Arosmith MINGW64 ~/sjc-devops (master)
+$ git branch -M main
+
+arosm@Arosmith MINGW64 ~/sjc-devops (main)
+$ ssh-keygen
+Generating public/private ed25519 key pair.
+Enter file in which to save the key (/c/Users/arosm/.ssh/id_ed25519):
+Enter passphrase for "/c/Users/arosm/.ssh/id_ed25519" (empty for no passphrase):
+Enter same passphrase again:
+The key fingerprint is:
+|         ..oo.+  |
+|         .o oB O |
++----[SHA256]-----+
+
+arosm@Arosmith MINGW64 ~/sjc-devops (main)
+nothing to commit, working tree clean
+arosm@Arosmith MINGW64 ~/sjc-devops (main)
+
+nothing to commit, working tree clean
+arosm
+arosm@Arosmith MINGW64 ~/sjc-devops (main)
+$ git commit -m "hello"
+On branch main
+
+$ git push -u origin main
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 222 bytes | 111.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+To https://github.com/Arosmith-S/devops_SJIT.git
+Enumerating objects: 3, done.
+arosm@Arosmith MINGW64 ~/sjc-devops (main)
+nothing to commit, working tree clean
+arosm@Arosmith MINGW64 ~/sjc-devops (main)
+On branch main
+$ git status
+$ git branch -M main
+
+$ git status
+On branch main
+$ git remote add origin https://github.com/Arosmith-S/devops_SJIT.git
+
+
+arosm@Arosmith MINGW64 ~/sjc-devops (main)
+arosm@Arosmith MINGW64 ~/sjc-devops (main)
+$ clip < ~/.ssh/id_ed25519.pub
+|          .o+.Bo+|
+|           oo.o=*|
+| . ..=o..o o .   |
+|        S o.*    |
+|  o  .....o + .  |
+| E       +.+ *   |
++--[ED25519 256]--+
+|  ..+++ . . o.   |
+SHA256:7UUocRe7Cd4lu3j/zAKzHdrx+h3GpjgLBQi0lNySgKc arosm@Arosmith
+The key's randomart image is:
+Your public key has been saved in /c/Users/arosm/.ssh/id_ed25519.pub
+
